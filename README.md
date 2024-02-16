@@ -44,14 +44,14 @@ The AWS credentials, EKS cluster information, and Kubernetes configuration are r
 ## Pipeline Environment Variables
 
 The pipeline uses the following environment variables:
-
- `000000` DOCKER_ID: Docker Hub username.
- `000000` DOCKER_IMAGE_CARTS: Docker image name for the carts service.
- `000000` DOCKER_TAG: Docker image tag, derived from the Jenkins build ID.
- `000000` BUILD_AGENT: Build agent information (empty for now).
- `000000` NAMESPACE: Kubernetes namespace, retrieved from Jenkins credentials.
- `000000` DOCKER_PASS: Docker Hub password, retrieved from Jenkins credentials.
- `000000` KUBECONFIG: Kubernetes configuration for Amazon EKS, retrieved from Jenkins credentials.
- `000000` AWSKEY, AWSSECRETKEY, AWSREGION, EKSCLUSTERNAME: AWS and EKS configuration details, retrieved from Jenkins credentials.
-
+```
+  DOCKER_ID: Docker Hub username.
+  DOCKER_IMAGE_CARTS: Docker image name for the carts service.
+  DOCKER_TAG: Docker image tag, derived from the Jenkins build ID.
+  BUILD_AGENT: Build agent information (empty for now).
+  NAMESPACE: Kubernetes namespace, retrieved from Jenkins credentials.
+  DOCKER_PASS: Docker Hub password, retrieved from Jenkins credentials.
+  KUBECONFIG: Kubernetes configuration for Amazon EKS, retrieved from Jenkins credentials.
+  AWSKEY, AWSSECRETKEY, AWSREGION, EKSCLUSTERNAME: AWS and EKS configuration details, retrieved from Jenkins credentials.
+```
 Configure the Jenkins pipeline with the required credentials and execute the pipeline.
