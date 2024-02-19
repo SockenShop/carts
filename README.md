@@ -1,9 +1,9 @@
 # carts service
 This repository contains Kubernetes manifests and a Jenkins pipeline for 
-### building, 
-### running, 
-### pushing, 
-and deploying the carts service.
+- building 
+- running
+- pushing
+- deploying the carts service.
 
 ## Service Manifest
 
